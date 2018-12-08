@@ -1,0 +1,21 @@
+{
+  "name": "beautiful_buttons",
+  "version": "1.0.0",
+  "description": "some nice css to add to your buttons",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass css/style.scss css/style.css -w"
+  },
+  "keywords": [
+    "css",
+    "css3",
+    "buttons",
+    "btn"
+  ],
+  "author": "Luke Morgan",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.10.0"
+  }
+}
