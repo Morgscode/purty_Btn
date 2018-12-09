@@ -9,9 +9,9 @@ html {
   font-size: 62.5%; }
 
 body {
-  margin-top: 15rem; }
+  margin-top: 10rem; }
 
-.button-test__container {
+.button-hover__container {
   width: 33vw;
   height: 30vh;
   display: flex;
@@ -19,8 +19,60 @@ body {
   border-radius: 100px;
   align-items: center;
   justify-content: center;
-  margin: 0 auto; }
-  .button-test__container a:link, .button-test__container a:visited {
+  margin: 2rem auto 0 auto; }
+  .button-hover__container a:link, .button-hover__container a:visited {
+    font-size: 1.8rem;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 800;
+    letter-spacing: 1px;
+    display: inline-block;
+    height: 56px;
+    width: 200px;
+    border-radius: 40px;
+    background-color: #f9f9f9;
+    text-decoration: none;
+    color: #3a3a3a;
+    text-align: center;
+    padding: 1.6rem 0;
+    transition: all .2s linear;
+    position: relative; }
+  .button-hover__container a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0.1rem 0px 3rem rgba(249, 249, 249, 0.6);
+    font-size: 2.2rem;
+    padding: 1.2rem 0;
+    text-transform: uppercase; }
+  .button-hover__container a:active {
+    transform: translateY(-1px);
+    box-shadow: 0.2rem 0.1px 6rem rgba(76, 209, 55, 0.6); }
+  .button-hover__container a::after {
+    content: '';
+    display: inline-block;
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+    transition: all .35s ease-out;
+    z-index: -1;
+    background-color: #f9f9f9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6; }
+  .button-hover__container a:hover::after {
+    transform: scaleX(1.3) scaleY(1.4);
+    opacity: 0; }
+
+/* </button-hover__container> */
+.button-click__container {
+  width: 33vw;
+  height: 30vh;
+  display: flex;
+  background-color: #3a3a3a;
+  border-radius: 100px;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem auto 0 auto; }
+  .button-click__container a:link, .button-click__container a:visited {
     font-size: 1.8rem;
     font-family: 'Shadows Into Light', cursive;
     font-weight: 800;
@@ -36,30 +88,28 @@ body {
     padding: 1.6rem 0;
     transition: all .1s linear;
     position: relative; }
-  .button-test__container a:hover {
+  .button-click__container a:hover {
     transform: translateY(-3px);
     box-shadow: 0.1rem 0px 3rem rgba(249, 249, 249, 0.6);
     font-size: 2.2rem;
     padding: 1.2rem 0;
     text-transform: uppercase; }
-  .button-test__container a:active {
+  .button-click__container a:active {
     transform: translateY(-1px);
     box-shadow: 0.2rem 0.1px 6rem rgba(76, 209, 55, 0.6); }
-  .button-test__container a::after {
+  .button-click__container a::after {
     content: '';
     display: inline-block;
     height: inherit;
     width: inherit;
     border-radius: inherit;
-    transition: all .65s ease-out;
+    transition: all .15s ease-out;
     z-index: -1;
     background-color: #f9f9f9;
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0.6; }
-  .button-test__container a:hover::after {
+  .button-click__container a:active::after {
     transform: scaleX(1.3) scaleY(1.4);
     opacity: 0; }
-
-/* </button-test__container> */
