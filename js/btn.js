@@ -1,4 +1,5 @@
 let pageBtn = document.querySelector('.button-hover__container a');
+let clickBtn = document.querySelector('.button-click__container a');
  
 
 pageBtn.addEventListener('mouseover', (e)=> {
@@ -7,6 +8,18 @@ pageBtn.addEventListener('mouseover', (e)=> {
     });
 
 pageBtn.addEventListener('mouseleave', ()=> {
+    pageBtn.innerHTML="hover";
+    pageBtn.style=`box-shadow: none;`;
+
+
+});
+
+clickBtn.addEventListener('mouseover', (e)=> {
+    e.target.innerHTML="click";
+    
+    });
+
+clickBtn.addEventListener('mouseleave', ()=> {
     pageBtn.innerHTML="hover";
     pageBtn.style=`box-shadow: none;`;
 
