@@ -103,7 +103,7 @@ body {
     height: inherit;
     width: inherit;
     border-radius: inherit;
-    transition: all .15s ease-out;
+    transition: all .25s ease-out;
     z-index: -1;
     background-color: #f9f9f9;
     position: absolute;
@@ -111,5 +111,6 @@ body {
     left: 0;
     opacity: 0.6; }
   .button-click__container a:active::after {
+    content: 'clicked';
     transform: scaleX(1.3) scaleY(1.4);
     opacity: 0; }

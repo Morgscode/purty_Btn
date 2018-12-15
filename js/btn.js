@@ -19,9 +19,9 @@ clickBtn.addEventListener('mouseover', (e)=> {
     
     });
 
-clickBtn.addEventListener('mouseleave', ()=> {
-    pageBtn.innerHTML="hover";
-    pageBtn.style=`box-shadow: none;`;
+clickBtn.addEventListener('mouseleave', (e)=> {
+    clickBtn.innerHTML="hover";
+    clickBtn.style=`box-shadow: none;`;
 
 
 });
