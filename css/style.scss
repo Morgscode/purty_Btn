@@ -157,24 +157,22 @@ body {
 
     a:active::after   {
         content: '';
-        animation: pulseFade .335s ease-out;
-        opacity: 0;
+        animation: pulseFade .02s ease;
+        opacity: 0; 
     }
 
      
 
 
 }
+
 @keyframes pulseFade {
     0% {
         opacity: 0.5;
     }
 
-    30% {
-        transform: scaleX(1.2) scaleY(1.4);
-    }
-
     100% {
+        transform: scaleX(1.3) scaleY(1.4);
         opacity: 0;
     }
 }
